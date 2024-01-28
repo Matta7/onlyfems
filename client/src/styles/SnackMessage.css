@@ -1,0 +1,51 @@
+.snack-message {
+  position: absolute;
+  align-items: center;
+  top: 65px;
+  right: 5px;
+  border-radius: 12px;
+  gap: 10px;
+  padding: 8px 12px 8px 12px;
+}
+
+.snack-message.full-top {
+  top: 5px;
+}
+
+.snack-message.success {
+  background-color: palegreen;
+}
+
+.snack-message.warning {
+  background-color: palegoldenrod;
+}
+
+.snack-message.error {
+  background-color: #FF9494;
+}
+
+.snack-message.info {
+  background-color: rgb(154, 219, 219);
+}
+
+.snack-message .btn-container {
+  margin: 0;
+}
+
+.snack-message .btn-container .close-btn {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 0;
+  padding: 7px;
+  transition: all ease 0.3s;
+}
+
+.snack-message .btn-container .close-btn:hover {
+  transform: scale(1.1);
+}
+
+.snack-message p {
+  margin: 0;
+}
+

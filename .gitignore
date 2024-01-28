@@ -1,0 +1,221 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/client/node_modules
+/client/.pnp
+/client.pnp.js
+
+# testing
+/client/coverage
+
+# production
+/client/build
+
+/client/node_modules
+/client/package-lock.json
+
+# misc
+/client/.DS_Store
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*
+target/
+/api/!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+/api/.apt_generated
+/api/.classpath
+/api/.factorypath
+/api/.project
+/api/.settings
+/api/.springBeans
+/api/.sts4-cache
+
+### mariadb ###
+/mariadb/*
+
+
+# Created by https://www.gitignore.io/api/git,java,maven,eclipse,windows
+
+### Eclipse ###
+
+/api/.metadata
+/api/bin/
+/api/tmp/
+/api/*.tmp
+/api/*.bak
+/api/*.swp
+/api/*~.nib
+/api/local.properties
+/api/.settings/
+/api/.loadpath
+/api/.recommenders
+
+# External tool builders
+/api/.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+/api/*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+/api/*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+/api/.cproject
+
+# CDT- autotools
+/api/.autotools
+
+# Java annotation processor (APT)
+/api/.factorypath
+
+# PDT-specific (PHP Development Tools)
+/api/.buildpath
+
+# sbteclipse plugin
+/api/.target
+
+# Tern plugin
+/api/.tern-project
+
+# TeXlipse plugin
+/api/.texlipse
+
+# STS (Spring Tool Suite)
+/api/.springBeans
+
+# Code Recommenders
+/api/.recommenders/
+
+# Annotation Processing
+/api/.apt_generated/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+/api/.cache-main
+/api/.scala_dependencies
+/api/.worksheet
+
+### Eclipse Patch ###
+# Eclipse Core
+/api/.project
+
+# JDT-specific (Eclipse Java Development Tools)
+/api/.classpath
+
+# Annotation Processing
+/api/.apt_generated
+
+/api/.sts4-cache/
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+/api/*.orig
+
+# Created by git when using merge tools for conflicts
+/api/*.BACKUP.*
+/api/*.BASE.*
+/api/*.LOCAL.*
+/api/*.REMOTE.*
+/api/*_BACKUP_*.txt
+/api/*_BASE_*.txt
+/api/*_LOCAL_*.txt
+/api/*_REMOTE_*.txt
+
+### Java ###
+# Compiled class file
+/api/*.class
+
+# Log file
+/api/*.log
+
+# BlueJ files
+/api/*.ctxt
+
+# Mobile Tools for Java (J2ME)
+/api/.mtj.tmp/
+
+# Package Files #
+/api/*.jar
+/api/*.war
+/api/*.nar
+/api/*.ear
+/api/*.zip
+/api/*.tar.gz
+/api/*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+/api/hs_err_pid*
+
+### Maven ###
+/api/target/
+/api/pom.xml.tag
+/api/pom.xml.releaseBackup
+/api/pom.xml.versionsBackup
+/api/pom.xml.next
+/api/release.properties
+/api/dependency-reduced-pom.xml
+/api/buildNumber.properties
+/api/.mvn/timing.properties
+/api/.mvn/wrapper/maven-wrapper.jar
+
+### Windows ###
+# Windows thumbnail cache files
+/api/Thumbs.db
+/api/ehthumbs.db
+/api/ehthumbs_vista.db
+
+# Dump file
+/api/*.stackdump
+
+# Folder config file
+/api/[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+/api/*.cab
+/api/*.msi
+/api/*.msix
+/api/*.msm
+/api/*.msp
+
+# Windows shortcuts
+/api/*.lnk
+
+### IntelliJ IDEA ###
+/api/.idea
+/api/*.iws
+/api/*.iml
+/api/*.ipr
+
+### VS Code ###
+/api/.vscode/
+
+### Some additional ignores (sort later)
+/api/*.DS_Store
+/api/*.sw?
+/api/.#*
+/api/*#
+/api/*~
+/api/.classpath
+/api/.project
+/api/.settings
+/api/bin
+/api/build
+/api/target
+/api/dependency-reduced-pom.xml
+/api/*.sublime-*
+/api/scratch
+/api/.gradle
+/api/README.html
+/api/*.iml
+/api/.idea
+/api/.exercism
+/api/upload/

@@ -1,0 +1,63 @@
+.navbar {
+  height: var(--navbar-height);
+  align-items: center;
+  background-color: white;
+  border-bottom: solid rgb(148, 147, 147) 1px;
+}
+
+.navbar .links {
+  gap: 20px;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .links .title-link {
+  font-size: 160%;
+  font-weight: 600;
+  color: black;
+  margin: 0 30px;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.navbar .links .link {
+  color: black;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.navbar .links .link:hover,
+.navbar .links .title-link:hover,
+.navbar .links .link.selected,
+.navbar .profile-btn.selected {
+  color: rgb(255, 72, 0);
+}
+
+.navbar .btns {
+  margin-left: auto;
+  gap: 10px;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.navbar .btns .btn {
+  padding: 6px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.navbar .btns .btn:hover {
+  color: rgb(255, 72, 0);
+}
+
+.navbar .btns .profile-btn.btn {
+  gap: 5px;
+  align-items: first baseline;
+}
+
+.navbar .btns .btn i {
+  font-size: 150%;
+}
+
+
+

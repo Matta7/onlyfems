@@ -1,0 +1,287 @@
+.admin-users {
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 3vh;
+  overflow-y: auto;
+}
+
+.admin-users .users {
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 3vh;
+}
+
+.admin-users .users table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.admin-users .users tr:nth-child(2n) td {
+  background-color: rgb(231, 231, 231);
+}
+
+.admin-users .users table td,
+.admin-users .users table th {
+  border: solid #6e7274 1px;
+  padding: 14px;
+}
+
+.admin-users .users table th {
+  background-color: #d0d4d8;
+}
+
+.admin-users .users table td {
+  background-color: white;
+}
+
+.admin-users .users table td:has(.actions) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.admin-users .users table td .actions {
+  justify-content: center;
+  gap: 20px;
+}
+
+.admin-users .users table td .actions i {
+  padding: 10px;
+  font-size: 120%;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.admin-users .users table td .actions i:hover {
+  transform: scale(1.15);
+}
+
+.admin-users .users table td .actions i.fa-pen:hover {
+  color: rgb(224, 184, 3);
+}
+
+.admin-users .users table td .actions i.fa-trash:hover {
+  color: rgb(142, 0, 0);
+}
+
+/**
+Modal
+**/
+
+.admin-users .show-modal-btn-container {
+  margin-top: 3vh;
+  width: 90%;
+}
+
+.admin-users .show-modal-btn {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #008CBA;
+  color: white;
+  transition: all ease 0.3s;
+}
+
+.admin-users .show-modal-btn:hover {
+  background-color: #006f94;
+  transform: scale(1.05);
+}
+
+.admin-users .fullscreen-dimmer {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.admin-users .new-user-modal,
+.admin-users .edit-user-modal {
+  flex-direction: column;
+  width: 40%;
+  gap: 20px;
+  background-color: white;
+  border-radius: 8px;
+  animation: dropdown forwards 0.5s ease-out;
+}
+
+.admin-users .new-user-modal .top-bar,
+.admin-users .edit-user-modal .top-bar {
+  border-bottom: solid #b1b1b1 2px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-users .new-user-modal .top-bar p,
+.admin-users .edit-user-modal .top-bar p {
+  margin: 10px;
+}
+
+.admin-users .new-user-modal .top-bar i,
+.admin-users .edit-user-modal .top-bar i {
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.admin-users .new-user-modal .top-bar i:hover,
+.admin-users .edit-user-modal .top-bar i:hover {
+  color: rgb(172, 0, 0);
+  transform: scale(1.35);
+}
+
+.admin-users .new-user-modal .new-user-form,
+.admin-users .edit-user-modal .edit-user-form {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 5% 20px 5%;
+}
+
+.admin-users .new-user-modal .new-user-form .fields,
+.admin-users .edit-user-modal .edit-user-form .fields {
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.admin-users .new-user-modal .new-user-form .field label,
+.admin-users .edit-user-modal .edit-user-form .field:not(:has(.password-field)) label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.admin-users .new-user-modal .new-user-form .field input,
+.admin-users .edit-user-modal .edit-user-form .field input {
+  padding: 6px 10px;
+  font-size: 110%;
+}
+
+.admin-users .new-user-modal .new-user-form .roles-criterias-container,
+.admin-users .edit-user-modal .edit-user-form .roles-criterias-container {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  gap: 5px;
+}
+
+.admin-users .new-user-modal .new-user-form .roles-criterias-container .roles-container,
+.admin-users .edit-user-modal .edit-user-form .roles-criterias-container .roles-container {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-users .new-user-modal .new-user-form .roles-criterias-container .roles-container p,
+.admin-users .edit-user-modal .edit-user-form .roles-criterias-container .roles-container p {
+  margin: 0;
+}
+
+.admin-users .new-user-modal .new-user-form .roles-criterias-container .roles-container .roles,
+.admin-users .edit-user-modal .edit-user-form .roles-criterias-container .roles-container .roles {
+  flex-direction: column;
+  gap: 3px;
+}
+
+.admin-users .new-user-modal .new-user-form .roles-criterias-container .roles-container .roles input,
+.admin-users .edit-user-modal .edit-user-form .roles-criterias-container .roles-container .roles input,
+.admin-users .edit-user-modal .edit-user-form .password-toggle {
+  margin-right: 10px;
+  line-height: normal;
+  width: 16px;
+  height: 16px;
+} 
+
+.admin-users .edit-user-modal .edit-user-form .password-field {
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.admin-users .edit-user-modal .edit-user-form .password-toggle {
+  display: inline-block;
+}
+
+.admin-users .new-user-modal .new-user-form .roles-criterias-container .criterias,
+.admin-users .edit-user-modal .edit-user-form .roles-criterias-container .criterias {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.admin-users .new-user-modal .new-user-form .criterias .criteria,
+.admin-users .edit-user-modal .edit-user-form .criterias .criteria {
+  gap: 5px;
+  align-items: baseline;
+}
+
+.admin-users .new-user-modal .new-user-form .criterias .criteria p,
+.admin-users .edit-user-modal .edit-user-form .criterias .criteria p {
+  margin: 0;
+}
+
+.admin-users .new-user-modal .new-user-form .criterias .criteria .fa-check,
+.admin-users .edit-user-modal .edit-user-form .criterias .criteria .fa-check {
+  color: rgb(1, 222, 1);
+}
+
+.admin-users .new-user-modal .new-user-form .criterias .criteria .fa-xmark,
+.admin-users .edit-user-modal .edit-user-form .criterias .criteria .fa-xmark {
+  color: red; 
+}
+
+.admin-users .new-user-modal .new-user-form .action-btns,
+.admin-users .edit-user-modal .edit-user-form .action-btns {
+  gap: 20px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 3vh;
+}
+
+.admin-users .new-user-modal .new-user-form .action-btns button,
+.admin-users .edit-user-modal .edit-user-form .action-btns button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.admin-users .new-user-modal .new-user-form .action-btns .validate,
+.admin-users .edit-user-modal .edit-user-form .action-btns .validate {
+  background-color: rgb(49, 235, 49);
+}
+
+.admin-users .new-user-modal .new-user-form .action-btns .validate:not(:disabled):hover,
+.admin-users .edit-user-modal .edit-user-form .action-btns .validate:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.admin-users .new-user-modal .new-user-form .action-btns .cancel, 
+.admin-users .edit-user-modal .edit-user-form .action-btns .cancel {
+  background-color: black;
+  color: white;
+}
+
+.admin-users .new-user-modal .new-user-form .action-btns .cancel:hover,
+.admin-users .edit-user-modal .edit-user-form .action-btns .cancel:hover {
+  transform: scale(1.05);
+}
+
+.admin-users .new-user-modal .new-user-form .action-btns .validate:disabled,
+.admin-users .edit-user-modal .edit-user-form .action-btns .validate:disabled {
+  background-color: #b1b1b1;
+  cursor: not-allowed;
+}
+
+.admin-users .new-user-modal .error,
+.admin-users .edit-user-modal .error {
+  width: 80%;
+  margin: auto;
+}

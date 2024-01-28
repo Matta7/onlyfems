@@ -1,0 +1,37 @@
+version: '3'
+services:
+ fembase:
+  image: mariadb:latest
+  container_name: fembase
+  command: --init-file /docker-entrypoint-initdb.d/init.sql
+  volumes:
+    - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+  environment:
+    MYSQL_DATABASE: onlyfems
+    MYSQL_ROOT_PASSWORD: admin
+    MYSQL_USER: admin
+    MYSQL_PASSWORD: admin
+  ports:
+    - "3306:3306"
+  restart: always
+
+ api:
+  build: ./api
+  restart: always
+  container_name: femapi
+  ports:
+    - "8080:8080"
+  depends_on:
+    - fembase
+
+ frontend:
+  build: ./client
+  restart: always
+  container_name: femclient
+  ports:
+    - "3000:3000"
+  depends_on:
+    - api
+
+volumes:
+ db_data: {}

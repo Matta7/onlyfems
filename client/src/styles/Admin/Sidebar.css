@@ -1,0 +1,30 @@
+.admin-sidebar {
+  flex-direction: column;
+  width: 15%;
+  min-width: 15%;
+  background-color: rgb(239, 235, 235);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.admin-sidebar .admin-link {
+  width: 75%;
+  margin: 0 auto;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+.admin-sidebar .admin-link:hover {
+  transform: scale(1.05);
+  background-color: rgba(224, 100, 6, 0.25);
+}
+
+.admin-sidebar .current {
+  color: rgb(126, 18, 18);
+  font-weight: 600;
+  background-color: rgba(224, 100, 6, 0.15)
+}
